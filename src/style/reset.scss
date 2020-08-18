@@ -1,0 +1,84 @@
+// 重置css默认样式
+
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0
+}
+
+body, button, input, select, textarea {
+  font: 14px/1.5 '微软雅黑', 'PT Sans', Georgia, Arial
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400
+}
+
+address, cite, dfn, em, var {
+  font-style: normal
+}
+
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace
+}
+
+small {
+  font-size: 12px
+}
+
+ol, ul {
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+sup {
+  vertical-align: text-top
+}
+
+sub {
+  vertical-align: text-bottom
+}
+
+legend {
+  color: #000
+}
+
+fieldset, img {
+  border: 0
+}
+
+button, input, select, textarea {
+  font-size: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+article, aside, audio, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video {
+  display: block;
+  margin: 0;
+  padding: 0
+}
+
+mark {
+  background: #ff0
+}
+
+canvas, img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+input, textarea, select {
+  outline: none !important;
+}
+
+@import './iconfont.scss';
