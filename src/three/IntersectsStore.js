@@ -37,11 +37,11 @@ class IntersectsStore extends AEvent {
     this._emit(eventName, intersects)
   }
   add(obj) {
-    // 判断是否为 object3d
-    if (obj instanceof Array) {
-      this._map.push(...obj)
-    } else if (obj instanceof Object && 'isMesh' in obj && obj.isMesh) {
+    // 判断是否为 object3d Mesh
+    if (obj instanceof Object && 'isMesh' in obj && obj.isMesh) {
       this._map.push(obj)
+    } else {
+      throw new Error(obj?.name + '不是 Mesh')
     }
 
   }
